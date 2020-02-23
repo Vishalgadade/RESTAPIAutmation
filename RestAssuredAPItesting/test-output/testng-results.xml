@@ -1,17 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4818" started-at="2020-02-22T18:15:37Z" finished-at="2020-02-22T18:15:42Z">
+  <suite name="Default suite" duration-ms="8331" started-at="2020-02-23T10:26:06Z" finished-at="2020-02-23T10:26:14Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4818" started-at="2020-02-22T18:15:37Z" finished-at="2020-02-22T18:15:42Z">
-      <class name="Basic_Auth_Verification">
-        <test-method status="PASS" signature="Autorization()[pri:0, instance:Basic_Auth_Verification@46d56d67]" name="Autorization" duration-ms="4745" started-at="2020-02-22T18:15:37Z" finished-at="2020-02-22T18:15:42Z">
+    <test name="Default test" duration-ms="8331" started-at="2020-02-23T10:26:06Z" finished-at="2020-02-23T10:26:14Z">
+      <class name="DataDrivenTest.DataDriven_Demo">
+        <test-method status="PASS" signature="AddnewEmp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDriven_Demo@4c70fda8]" name="AddnewEmp" duration-ms="6404" started-at="2020-02-23T10:26:06Z" data-provider="Empdata" finished-at="2020-02-23T10:26:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[abc]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[19]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Autorization -->
-      </class> <!-- Basic_Auth_Verification -->
+        </test-method> <!-- AddnewEmp -->
+        <test-method status="PASS" signature="AddnewEmp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDriven_Demo@4c70fda8]" name="AddnewEmp" duration-ms="898" started-at="2020-02-23T10:26:12Z" data-provider="Empdata" finished-at="2020-02-23T10:26:13Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[def]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[345]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[21]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddnewEmp -->
+        <test-method status="PASS" signature="AddnewEmp(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:DataDrivenTest.DataDriven_Demo@4c70fda8]" name="AddnewEmp" duration-ms="921" started-at="2020-02-23T10:26:13Z" data-provider="Empdata" finished-at="2020-02-23T10:26:14Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[xyz]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[34]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddnewEmp -->
+      </class> <!-- DataDrivenTest.DataDriven_Demo -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
