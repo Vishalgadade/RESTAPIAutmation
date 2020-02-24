@@ -5,7 +5,7 @@
     <classes>
       <class name="DataDrivenTest.DataDriven_Demo">
         <methods>
-          <include name="AddnewEmp"/>
+          <include name="AddnewEmp" invocation-numbers="2"/>
         </methods>
       </class> <!-- DataDrivenTest.DataDriven_Demo -->
     </classes>
