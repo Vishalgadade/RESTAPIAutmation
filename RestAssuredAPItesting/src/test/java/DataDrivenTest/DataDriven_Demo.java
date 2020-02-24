@@ -1,5 +1,7 @@
 package DataDrivenTest;
 
+import java.io.IOException;
+
 import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
@@ -56,10 +58,23 @@ public class DataDriven_Demo {
 	}
 	
 	@DataProvider(name="Empdata")
-	String [][] getEmpData()
+	String [][] getEmpData() throws IOException
 	{
-		String empData[][]= {{"abc","123","19"},{"def","345","21"},{"xyz","456","34"}};	
-		return (empData);
+		
+		String Path=System.getProperty("user.dir")+"/src/test/java/DataDrivenTest/Empdata.xlsx";
+		int rownum=ExcelUtilities.getRowCount(Path, "Sheet1");
+		int colcount=ExcelUtilities.getCellCount(Path, "Sheet1", 1);
+		
+		String Empdata [][]= new String[rownum][colcount];
+		for(int i=1;i<=rownum;i++) {
+			for(int j=0;j<colcount;j++)
+			{
+				Empdata [i-1][j]=ExcelUtilities.getCellData(Path, "Sheet1", i, j);
+			}
+			
+		}
+		//String empData[][]= {{"abc","123","19"},{"def","345","21"},{"xyz","456","34"}};	
+		return (Empdata);
 	}
 
 }
